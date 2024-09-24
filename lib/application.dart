@@ -8,6 +8,7 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      theme: ThemeData(useMaterial3: true),
       initialRoute: MainScreen.routeName,
       routes: {
         MainScreen.routeName: (ctx) => const MainScreen(),
